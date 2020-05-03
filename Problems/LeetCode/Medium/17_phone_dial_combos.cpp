@@ -21,22 +21,22 @@ public:
                 ans.push_back(res+currStr[i]);
         
         }
-} 
+    } 
 
-vector<string> letterCombinations(string digits) 
-{
-    dig2alpha[2] = "abc";
-    dig2alpha[3] = "def";
-    dig2alpha[4] = "ghi";
-    dig2alpha[5] = "jkl";
-    dig2alpha[6] = "mno";
-    dig2alpha[7] = "pqrs";
-    dig2alpha[8] = "tuv";
-    dig2alpha[9] = "wxyz";
-    
-    
-    
-    compute(digits, "", 0);
-    return ans;
-}
+    vector<string> letterCombinations(string digits) 
+    {
+        dig2alpha[2] = "abc";
+        dig2alpha[3] = "def";
+        dig2alpha[4] = "ghi";
+        dig2alpha[5] = "jkl";
+        dig2alpha[6] = "mno";
+        dig2alpha[7] = "pqrs";
+        dig2alpha[8] = "tuv";
+        dig2alpha[9] = "wxyz";
+
+
+
+        compute(digits, "", 0);
+        return ans;
+    }
 };
