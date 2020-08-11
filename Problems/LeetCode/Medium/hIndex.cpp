@@ -7,6 +7,9 @@ public:
         if( citations.size() == 1 )
             return (citations[0] > 0)? 1:0;
         
+        sort(citations.begin(),citations.end());
+        
+        
         int n = citations.size() ;
         int r = n;
         int l = 0;
